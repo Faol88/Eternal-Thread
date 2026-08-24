@@ -1,0 +1,37 @@
+# ==============================================================================
+# 🧠 3D WEAIRE-PHELAN LIVING MEMORY CORE — CONFIGURATION
+# ==============================================================================
+# All settings can be overridden at runtime via Environment Variables:
+#   MEMORY_DATA_DIR, MEMORY_COLLECTION, MEMORY_ENCRYPTION_KEY,
+#   MEMORY_EMBEDDING_MODEL, MEMORY_MAX_COUNT, MEMORY_LLM_URL, etc.
+# ==============================================================================
+
+# Data Storage
+storage:
+  data_dir: "./data"
+  collection_name: "living_memory_core"
+
+# Embedding Model Configuration (100% Local & Offline)
+embedding:
+  model_name: "all-MiniLM-L6-v2"
+
+# Security & Encryption Layer (Optional)
+# Leave empty ("") for plaintext mode.
+# If a key is set, memory contents are encrypted on disk with Fernet (AES-128-CBC + HMAC).
+security:
+  encryption_key: ""
+
+# Memory Management & Intelligent Multi-Factor Pruning
+memory_management:
+  max_memories: 50000
+  min_emotional_weight: 0.15
+  protected_maps:
+    - "identity"
+    - "facts"
+    - "preferences"
+
+# Local LLM Integration Defaults (Ollama, LM Studio, LocalAI, etc.)
+llm_bridge:
+  api_url: "http://localhost:11434/api/generate"
+  model_name: "llama3:latest"
+  default_context_count: 4

@@ -1,0 +1,59 @@
+# ==============================================================================
+# 🧠 3D WEAIRE-PHELAN LIVING MEMORY CORE — EXAMPLE CONFIGURATION TEMPLATE
+# ==============================================================================
+# Copy this file to `config.yaml` and customize settings for your project.
+# All settings can be overridden at runtime via Environment Variables.
+# ==============================================================================
+
+# Data Storage Settings
+storage:
+  # Path where vector databases, spiderweb graphs, and maps are stored
+  # Env override: MEMORY_DATA_DIR
+  data_dir: "./data"
+
+  # ChromaDB collection identifier
+  # Env override: MEMORY_COLLECTION
+  collection_name: "living_memory_core"
+
+# Embedding Model Configuration (100% Local & Offline)
+embedding:
+  # Any SentenceTransformer compatible HuggingFace model
+  # Env override: MEMORY_EMBEDDING_MODEL
+  model_name: "all-MiniLM-L6-v2"
+
+# Security & Zero-Knowledge Encryption Layer (Optional)
+# Leave empty ("") for plaintext mode.
+# If provided, all stored documents and metadata are encrypted with AES-128-CBC + HMAC on disk.
+# Env override: MEMORY_ENCRYPTION_KEY
+security:
+  encryption_key: ""
+
+# Memory Management & Intelligent Multi-Factor Pruning
+memory_management:
+  # Maximum number of memories before decay initiates (integer or null)
+  # Env override: MEMORY_MAX_COUNT
+  max_memories: 50000
+
+  # Minimum emotional weight required for long-term retention
+  # Env override: MEMORY_MIN_WEIGHT
+  min_emotional_weight: 0.15
+
+  # Domain maps that are strictly protected from automatic pruning
+  protected_maps:
+    - "identity"
+    - "facts"
+    - "preferences"
+
+# Local LLM Integration Defaults (Ollama, LM Studio, LocalAI, vLLM, etc.)
+llm_bridge:
+  # Local LLM completion endpoint
+  # Env override: MEMORY_LLM_URL
+  api_url: "http://localhost:11434/api/generate"
+
+  # Target model name
+  # Env override: MEMORY_LLM_MODEL
+  model_name: "llama3:latest"
+
+  # Default number of memories to retrieve into the prompt context block
+  # Env override: MEMORY_CONTEXT_COUNT
+  default_context_count: 4

@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Local Database / Memory Storage
+data/memory_maps.json
+data/memory_spiderweb.json
+data/chroma_db/
+*.tmp
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+release/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
