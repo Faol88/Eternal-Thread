@@ -2,12 +2,12 @@
 Eternal Living Memory Core
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 Universal 3D Weaire-Phelan Topological & Vector Memory Architecture for AI.
-Author: Faol88 (K.N.A.M) | Kevin Nuydens
+Author: Faol88
 Version: 1.5.0
 """
 
 __version__ = "1.5.0"
-__author__ = "Faol88 (K.N.A.M) | Kevin Nuydens"
+__author__ = "Faol88"
 
 from core.memory_engine import MemoryCore
 from core.config import MemoryConfig

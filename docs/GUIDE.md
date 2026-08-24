@@ -1,6 +1,6 @@
 # 📖 Eternal Living Memory Core — Architectural & Developer Guide
 
-**Author**: Faol88 (K.N.A.M) | Kevin Nuydens  
+**Author**: Faol88  
 **Version**: 1.0.0 (Commercial itch.io & Open Source Edition)  
 **License**: MIT License  
 
@@ -40,7 +40,8 @@ The **3D Living Memory Core** introduces **Topological Associative Memory**:
 Every memory is computed into 3 continuous spatial coordinates $(X, Y, Z)$:
 $$X = 	ext{Domain Anchor} + \Delta_{	ext{content hash}}$$
 $$Y = (2 	imes 	ext{Emotional Weight}) - 1.0$$
-$$Z = 1.0 - \left(rac{	ext{Days Elapsed}}{30.0}ight)$$
+$$Z = 1.0 - \left(rac{	ext{Days Elapsed}}{30.0}
+ight)$$
 
 ### The Three Axes:
 1. **$X$-Axis (Cognitive Domain Map)**: Thematic category from left to right.

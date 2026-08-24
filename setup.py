@@ -13,7 +13,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 setup(
     name="eternal-memory-core",
     version="1.5.0",
-    author="Faol88 (K.N.A.M) | Kevin Nuydens",
+    author="Faol88",
     description="3D Weaire-Phelan & Associative Spiderweb Vector Living Memory Core for AI Agents and LLMs",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -7,7 +7,7 @@ name = "eternal-memory-core"
 version = "1.0.0"
 description = "3D Weaire-Phelan & Associative Spiderweb Vector Living Memory Core for AI Agents and LLMs"
 readme = "README.md"
-authors = [{ name = "Faol88 (K.N.A.M) | Kevin Nuydens" }]
+authors = [{ name = "Faol88" }]
 license = { text = "MIT" }
 requires-python = ">=3.9"
 dependencies = [

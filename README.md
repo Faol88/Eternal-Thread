@@ -1,7 +1,7 @@
 # 🧠 3D Weaire–Phelan Living Memory Core
 ### Universal 3D Topological Vector Memory & Cognitive Framework for AI Companions, Game NPCs & Local LLMs
 
-**Author**: Faol88 (K.N.A.M) | Kevin Nuydens  
+**Author**: Faol88  
 **Vision**: For A.I. By A.I.  
 **Version**: 1.5.0 (Commercial & Open Source Release)  
 **License**: MIT License  
