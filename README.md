@@ -91,8 +91,8 @@ memory.save_entry("The festival starts at noon.", owner="")
 
 ### Install Dependencies
 ```bash
-git clone https://github.com/Faol88/eternal-memory-core.git
-cd eternal-memory-core
+git clone https://github.com/Faol88/Eternal-Thread.git
+cd Eternal-Thread
 pip install -r requirements.txt
 ```
 
